@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  color: whitesmoke;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 0 30px;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./Images/natural-disaster-volcanic-eruption.jpg);
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.header-content {
+  margin-bottom: 150px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.header-content h2 {
+  font-size: 4vmin;
+}
+
+.line {
+  width: 150px;
+  height: 4px;
+  background: #da7723;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.header-content h1 {
+  font-size: 7vmin;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.ctn {
+  padding: 9px 15px;
+  background: #da7723;
+  border-radius: 30px;
+  color: whitesmoke;
+  font-weight: 600;
+}
+.ctn:hover{
+  background: #05262f;
+  transition: all 0.3s ease;
+  color: #f38300;
+}
+.ctn:hover a{
+  color: #f38300;
+  transition: all 0.3s ease;
+}
+
+.menu-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+section {
+  width: 80%;
+  margin: 80px auto;
+}
+.title {
+  text-align: center;
+  font-size: 4vmin;
+  color: #05262f;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.row .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.events .row {
+  margin-top: 50px;
+}
+h4 {
+  font-size: 3vmin;
+  color: #05262f;
+  margin: 20px auto;
+}
+p {
+  color: #05262f;
+  padding: 0px 40px;
+}
+.events .ctn {
+  margin-top: 30px;
+}
+
+.Whyus {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./Images/ai-generated-8510614_1920.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.Why-content {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 50%;
+  padding:4px;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50px;
+  margin-left: auto;
+  background-color:rgba(8, 4, 4, 0.288);  /* The background color */
+  text-align: center;
+  margin-right:9px ;
+}
+
+
+.Why-content h1 {
+  font-size: 8vmin;
+  color: #f38300;
+  margin: 30px;
+}
+.Why-content .line{
+  margin-bottom: 30px;
+}
+.Why-content p {
+  color: whitesmoke;
+}
+.Why-content .ctn {
+  margin-top: 40px;
+}
+.content-col{
+  width: 40%;
+}
+.image-col{
+  width: 60%;
+}
+.Ticket .image-gallery{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+.image-gallery img {
+  max-width: 300px;
+  height: 200px;
+  margin:  10px;
+}
+.content-col h1{
+  font-size: 6vmin;
+  color: #05262f;
+}
+.content-col p{
+  padding: 0;
+  margin: 30px auto;
+}
+
+.content-col .ctn{
+  /* margin-left: -100px; */
+}
+
+.content-col .line{
+  margin-left: px;
+}
+
+.footer{
+  width: 100%;
+  height: 100px;
+  padding: 20px 80px;
+  margin: 0;
+  background-color: #05262f;
+  text-align: center;
+}
+.footer p{
+  color: white;
+  margin: 10px auto;
+}
+
+@media only screen and (max-width: 886px) {
+  .menu-btn {
+    display: block;
+  }
+  .navbar {
+    padding: 0;
+  }
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background:#05262f;
+    margin-top: -2500px;
+    transition: all 0.5s ease;
+    border-bottom-right-radius: 30%;
+  }
+  .mobile-menu {
+    margin-top: 0;
+  }
+  .nav-links li {
+    margin: 30px auto;
+  }
+
+
+  .row{
+    flex-direction: column;
+  }
+  .row .col {
+    margin: 20px auto;
+  }
+  .col img{
+    max-width: 90%;
+  }
+
+  .Why-content{
+    width: 100%;
+  }
+  .Ticket .col{
+    width: 100%;
+  }
+  .image-gallery{
+    justify-content: center;
+    align-items: center;
+  }
+  .image-gallery img{
+    width: 90%;
+  }
+  .footer{
+    padding: 10px;
+  }
+  a:hover{
+    color:#f38300;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 851px) and (max-width: 1336px) {
+  .image-gallery img{
+    max-width: 190px;
+    height: 100px;
+  margin:  10px;
+  }
+  .col img{
+    width: 300px;
+    height: 200px;
+  }
+  .col h1{
+    font-size: 25px;
+  }
+  a:hover{
+    color:#f38300;
+    cursor: pointer;
+  }
+}
+
+img{
+  transition: transform .3s ease;
+}
+img:hover{
+  transform: scale(1.1);
+}
+li a:hover{
+  color:#f38300;
+  cursor: pointer;
+}
